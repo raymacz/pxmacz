@@ -1,0 +1,54 @@
+$color__skin: rgba(104, 73, 49, 0.9); // Header etc.
+$color__interactive: #b51c35; // Links, highlights, etc.
+$color__interactive_two: #e36b02; // Links, highlights, etc.
+$color__none: transparent; // Header etc.
+$color_navbar_state: #EEC856;
+
+$color__background-body: #ffeee0;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__bg_comment: #fbe8dd;
+$color__bg_footer: #1c1400;
+
+$color__text-screen: #21759b;
+$color__text-input: #697179;
+$color__text-input-focus: #111;
+$color__link: #053658;
+$color__link-visited: #609;
+$color__link-hover: $color__interactive;
+$color__text-main: #e36b02;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #665;
+
+/** new variables rbtm **/
+$color__comment_border: hsl(0, 0%, 80%);
+$color__buttons: #697179;
+
+// Restated Bootstrap Variables
+
+/** frontpage template color variables start **/
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$gray-opacity: rgba(33, 37, 41, 0.5);
+$black: #000 !default;
+
+/* $primary: #fed136 !default; */
+$primary: #ee6f00 !default;
+
+/** frontpage template color variables end **/

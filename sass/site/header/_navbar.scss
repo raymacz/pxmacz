@@ -1,0 +1,161 @@
+
+/** front Page **/
+// Styling for the navbar
+
+#mainNav {
+  min-height: 76px;
+  background-color: $gray-opacity;
+
+  div.row.btnrow {
+    width: 100%;
+
+    .navbar-toggler {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      right: 0;
+      padding: 13px;
+      text-transform: uppercase;
+      color: white;
+      border: 0;
+      background-color: $primary;
+      font-family: $font__header-font;
+    }
+
+    .site-title {
+      a {
+        width: 100%;
+        font-family: $font__script;
+
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+          color: darken($primary, 10%);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        ul.sub-menu a.dropdown-item {
+          font-family: $font__header-font;
+
+          &:active,
+          &:hover {
+            background-color: $primary;
+            color: white;
+          }
+        }
+
+        .nav-link {
+          font-weight: 400;
+          padding: 0.75em 0;
+          letter-spacing: 1px;
+          color: white;
+          font-family: $font__header-font;
+
+          &:active,
+          &:hover {
+            // background-color: $primary;
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    i.site-description {
+      font-size: 14px;
+    }
+  }
+}
+
+#page .navbar {
+  transition: all 1s ease-out;
+}
+.site-title a { color: $primary; }
+
+@media(min-width:$query_b4_lg) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+
+    .navbar-brand {
+      font-size: 1.2em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    i.site-description {
+      font-size: 92%;
+    }
+
+    .navbar-nav {
+      margin-left: 0;
+
+      .nav-item {
+        .nav-link {
+          padding: 1.1em 0.75em !important;
+        }
+      }
+    }
+
+    .divbtn {
+      display: none;
+    }
+
+    .collapse.navbar-collapse {
+      flex: 0 1 auto;
+      font-size: 90%;
+    }
+
+    &.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $gray-opacity;
+
+      .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+
+      i.site-description {
+        display: none;
+      }
+    }
+  }
+}
+@media(max-width:$query_b4_lg) {
+  #mainNav {
+    min-height: 110px;
+  }
+}
+@media(max-width:545px) {
+  i.site-description {
+    display: none;
+  }
+}
+@media screen and (max-width: $query_b4_xs_mx) {
+  #mainNav {
+    div.row.btnrow {
+      // width: 100%;
+      i.site-description {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px)	{
+  #mainNav .col-auto.divbtn {
+      padding: 0px;
+  }
+}

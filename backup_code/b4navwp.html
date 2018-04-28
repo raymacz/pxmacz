@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap NavBar</title>
+
+  <!-- Bootstrap -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/bootstrap-4-navbar.css" rel="stylesheet">
+
+
+  <!--Demo purpose css-->
+  <style>
+    body {
+      padding-top: 50px;
+    }
+
+    .navbar {
+      margin: 40px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+      <!-- code here -->
+
+      <ul id="primary-menu" class="navbar-nav text-uppercase">
+        <li id="menu-item-1725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1725 nav-item"><a href="#page-top" class="nav-link">Home</a></li>
+        <li id="menu-item-1726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1726 nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+          <ul class="sub-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li id="menu-item-1727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1727"><a href="http://site3.net/blog" class="dropdown-item">All Blogs</a></li>
+            <li id="menu-item-1728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1728"><a href="/hello-world" class="dropdown-item">Hello World</a></li>
+            <li id="menu-item-1765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1765"><a href="/markup-image-alignment" class="dropdown-item">Image Alignment</a></li>
+            <li id="menu-item-1729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1729"><a href="/markup-html-tags-and-formatting" class="dropdown-item">Tag and Formatting</a></li>
+            <li id="menu-item-1768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1768"><a href="/template-sticky" class="dropdown-item">Sticky Template</a></li>
+            <li id="menu-item-1771" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1771"><a href="/edge-case-many-categories" class="dropdown-item">Many Categories</a></li>
+            <li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731"><a href="#" class="dropdown-item dropdown-toggle">Bsub3</a>
+              <ul class="sub-menu dropdown-menu">
+                <li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1732"><a href="#" class="dropdown-item dropdown-toggle">Bsub3a</a>
+                  <ul class="sub-menu dropdown-menu">
+                    <li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733"><a href="#" class="dropdown-item">Bsub3b</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="menu-item-1739" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1739"><a rel="nav-link js-scroll-trigger" href="#services" class="nav-link">Services</a></li>
+        <li id="menu-item-1735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1735 nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li id="menu-item-1736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1736 nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li id="menu-item-1737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1737 nav-item"><a href="#team" class="nav-link">Team</a></li>
+        <li id="menu-item-1738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1738 nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- dynamic wp menu starts here -->
+
+      <div id="navbarResponsive" class="collapse navbar-collapse col-auto">
+        <ul id="primary-menu" class="navbar-nav text-uppercase">
+          <li id="menu-item-1725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1725"><a href="#page-top">Home</a></li>
+          <li id="menu-item-1726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1726"><a href="#">Blog</a>
+            <ul class="sub-menu">
+              <li id="menu-item-1727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1727"><a href="http://site3.net/blog">All Blogs</a></li>
+              <li id="menu-item-1728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1728"><a href="/hello-world">Hello World</a></li>
+              <li id="menu-item-1765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1765"><a href="/markup-image-alignment">Image Alignment</a></li>
+              <li id="menu-item-1729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1729"><a href="/markup-html-tags-and-formatting">Tag and Formatting</a></li>
+              <li id="menu-item-1768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1768"><a href="/template-sticky">Sticky Template</a></li>
+              <li id="menu-item-1771" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1771"><a href="/edge-case-many-categories">Many Categories</a></li>
+              <li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1731"><a href="#">Bsub3</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1732"><a href="#">Bsub3a</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733"><a href="#">Bsub3b</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li id="menu-item-1739" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1739"><a rel="nav-link js-scroll-trigger" href="#services">Services</a></li>
+          <li id="menu-item-1735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1735"><a href="#portfolio">Portfolio</a></li>
+          <li id="menu-item-1736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1736"><a href="#about">About</a></li>
+          <li id="menu-item-1737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1737"><a href="#team">Team</a></li>
+          <li id="menu-item-1738" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1738"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- dynamic wp menu ends here -->
+    </nav>
+
+
+
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>Bootstrap 4 multi dropdown navbar</h1>
+      <p>This example of bootstrap 4 navigation with multi dropdown menu.</p>
+      <p>
+        <a class="btn btn-lg btn-danger" href="https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-navbar/" target="_blank" role="button">Live Demo</a>
+        <a class="btn btn-lg btn-primary" href="https://github.com/bootstrapthemesco/bootstrap-4-multi-dropdown-navbar" target="_blank" role="button">Download from Github</a>
+        <a class="btn btn-lg btn-info" href="https://bootstrapthemes.co/demo/resource/bootstrap-4-multi-dropdown-hover-navbar/" target="_blank" role="button">hover version</a>
+      </p>
+    </div>
+
+  </div>
+  <!-- /container -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap-4-navbar.js"></script>
+</body>
+
+</html>

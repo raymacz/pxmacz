@@ -1,0 +1,153 @@
+/** posts and pages **/
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.entry-header {
+	font-family: $font__header-font;
+}
+
+.not-found .post__content a {
+    border-bottom: none;
+}
+
+.cat-links,
+.tags-links {
+	font-size: 90%;
+	font-weight: 700;
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+.cat-links {
+	 a {
+		 color: $color__interactive;
+   		&:focus,
+ 		  &:hover {
+ 				background-color: $color__interactive;
+ 				color: white;
+ 		}
+	}
+}
+
+.tags-links {
+	a {
+		color: $color__interactive_two;
+		&:focus,
+		&:hover {
+			background-color: $color__interactive_two;
+			color: white;
+		}
+	}
+}
+h2.entry-title,
+h1.entry-title {
+	margin: .125em 0 .25em;
+	font-size: 2.5em;
+	@media screen and (min-width: $query_b4_md) {
+		font-size: 3em;
+	}
+	a {
+			text-decoration: none;
+			color: black;
+			&:focus,
+			&:hover {
+				border-bottom: 5px solid $color__interactive;
+			}
+	}
+}
+
+.entry-meta {
+	font-size: 90%;
+	a {
+		font-weight: 700;
+		text-decoration: none;
+		color: black;
+		/* temporary */
+		&:focus,
+		&:hover {
+			color: black;
+			border-bottom: 3px solid $color__interactive;
+		}
+	}
+}
+
+.posted-on {
+	&::after {
+		content: "|";
+		margin: 0 .5em;
+
+	}
+}
+.comments-link,
+.edit-link {
+	&::before {
+		content: "|";
+		margin: 0 .5em;
+
+	}
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+aside#secondary,
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+span.cat-links {
+    display: block;
+}
+
+
+.full-bleed {
+	width: 100vw;
+	max-height: 1200px;
+	margin-top: 1em;
+	margin-left: -1em;
+	border-top: 1px solid hsl(0, 0%, 90%);
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+	overflow: hidden;
+
+	@media screen and (min-width: $query_b4_sm) {
+		margin-left: calc( ((-100vw + #{$query_b4_sm})/2) - 2.05em );
+	}
+
+	@media screen and (min-width: 700px) {
+		margin-left: calc( ((-100vw + #{$query_b4_sm})/2) - 1.85em );
+	}
+
+	@media screen and (min-width: $query_b4_md) {
+		 margin-left: calc( ((-100vw + #{$query_b4_md})/2) - 2.15em );
+	}
+
+	@media screen and (min-width: $query_b4_lg) {
+		margin-top: 1.5em;
+		margin-left: calc( ((-100vw + #{$query_b4_lg})/2) - 1.7em );
+	}
+	// stretches across screen ignoring max-width
+	@media screen and (min-width: $query_b4_xl) {
+		 margin-right: calc( ((-100vw + #{$query_b4_xl})/2) - 2.5em );
+		 margin-left: calc( ((-100vw + #{$query_b4_xl})/2) - 2.5em );
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}

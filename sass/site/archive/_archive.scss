@@ -1,0 +1,71 @@
+/** Archive Pages**/
+.archive-view {
+  background-color: $color__background-body;
+  .post, .page {
+    background-color: white;
+    position: relative;
+
+    figure {
+      // border: 1px solid rgba(0, 0, 0, 0.125);
+      border-bottom: none;
+
+      a > img {
+        margin: 0 auto;
+        display: block;
+        overflow: hidden;
+
+        &:focus,
+        &:hover {
+          outline: 0;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.post__content {
+  padding: 2em 2em 3em;
+  // border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: calc(0.25rem - 1px);
+  position: relative;
+}
+
+.continue-reading {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: $font__header-font;
+
+  a {
+    display: block;
+    padding: 0.5em 1em;
+    font-size: 90%;
+    text-decoration: none;
+    // background: hsl(0, 0%, 85%);
+    background: $color__buttons;
+    color: white;
+
+    &:focus,
+    &:hover {
+      color: white;
+      background: $color__interactive;
+    }
+  }
+}
+
+//sticky fold shadow
+.sticky::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-color: lightgray;
+    right: 0;
+    top: 0;
+    border-width: 0 2em 2em 0;
+    border-color: #f8f9fa hsla(0, 4%, 89%, 0.5) #f8f9fa;
+    border-style: solid;
+    box-shadow: -1px 2px 2px hsla(0, 0%, 10%, .1);
+}

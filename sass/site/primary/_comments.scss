@@ -1,0 +1,128 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+/**added rbtm **/
+
+.comments-area {
+	width: 100%;
+	margin: 3em 0;
+	padding: 1.5em 0;
+	border-top: 1px solid $color__comment_border;
+	// text-decoration: none;
+	.comments-title {
+		margin-bottom: 2em;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+
+	.comment-list {
+		padding: 0;
+		margin: 0 15px;
+		list-style-type: none;
+	}
+
+	.comment-body {
+		border: 1px solid $color__comment_border;
+		padding: 0 0 20px 20px;
+		margin-bottom: 1.5em;
+		margin-left: 0;
+		// border-radius: 30px;
+		border-top-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		background-color: white;
+		footer.comment-meta {
+			position: relative;
+			// margin-left: 40px;
+			border-top: 1px solid $color__bg_comment;
+			font-family: $font__body-font;
+			font-size: 80%;
+			padding: 10px 0;
+			height: 100%;
+			margin: 20px 0 20px 40px;
+			text-align: left;
+			background-color: $color__bg_comment;
+
+			div.comment-author {
+				margin-left: 5%;
+
+				img.avatar {
+					position: absolute;
+					border-radius: 40px;
+					left: -48px;
+					top: -5px;
+					border: 5px solid $color__interactive_two;
+					box-sizing: content-box;
+				}
+			}
+
+			div.comment-metadata {
+				margin-left: 5%;
+			}
+		}
+
+		.comment-content,
+		.comment-meta,
+		.reply {
+			a {
+				text-decoration: none;
+				border: none;
+
+				&:focus,
+				&:hover {
+					border-bottom: 3px solid $color__interactive;
+				}
+			}
+		}
+	}
+
+	.comment-reply-title {
+		margin-bottom: 1em;
+		text-align: left;
+	}
+
+	.comment-form {
+		font-family: $font__body-font;
+		line-height: 1.2em;
+		margin-left: 15px;
+
+		.form-submit {
+			text-align: right;
+		}
+
+		label {
+			width: 33%;
+			color: $color__interactive_two;
+			display: block;
+			font-style: italic;
+			padding-bottom: 0.4em;
+		}
+
+		span.required {
+			color: $color__interactive;
+		}
+
+		p.form-submit input {
+			padding: 0.4em 0.8em;
+			font-size: 80%;
+			color: #000;
+			line-height: 1.5em;
+			text-decoration: none;
+			border: 1px solid #c3c3c3;
+			font-weight: 700;
+			border-radius: 3px;
+			margin-right: 15px;
+
+			&:focus,
+			&:hover {
+				color: #fff;
+				background: $color__interactive;
+				border-color: $color__interactive;
+			}
+		}
+	}
+}
+/* Comment Form */

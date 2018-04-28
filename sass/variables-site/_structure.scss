@@ -1,0 +1,26 @@
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+
+$query__small: 600px;
+$query__medium: 900px;
+$size__max-width: 1080px;
+
+$query__font: 700px;
+
+$query__smallest: 540px;
+
+/*b4 grid  >=  < 576 768 992 1200 */
+/* max-width */
+$query_b4_xs5_mx: 359px;
+$query_b4_xs_mx: 575px;
+$query_b4_sm_mx: 767px;
+$query_b4_md_mx: 991px;
+$query_b4_lg_mx: 1199px;
+
+/* min-width */
+$query_b4_xs5: 360px;
+$query_b4_sm: 576px;
+$query_b4_md: 768px;
+$query_b4_lg: 992px;
+$query_b4_xl: 1200px;

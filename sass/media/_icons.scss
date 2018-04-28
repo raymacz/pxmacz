@@ -1,0 +1,52 @@
+/* SVG Icons base styles */
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 2.0em;
+  position: relative;
+  /* Align more nicely with capital letters */
+  top: -0.0625em;
+  vertical-align: middle;
+  width: 2.0em;
+}
+
+/*--------------------------------------------------------------
+SVG Fallbacks
+--------------------------------------------------------------*/
+.svg-fallback {
+  display: none;
+}
+
+.no-svg .svg-fallback {
+  display: inline-block;
+}
+
+.no-svg .nav-links .svg-fallback {
+  padding: 0 0.5em;
+  color: inherit;
+  background: inherit;
+}
+
+.no-svg .svg-fallback.icon-arrow-long-left:before {
+  content: "←";
+}
+
+.no-svg .svg-fallback.icon-arrow-long-right:before {
+  content: "→";
+}
+/* Social Menu fallbacks */
+.no-svg .footer-menu a {
+  height: auto;
+  width: auto;
+}
+
+.no-svg .footer-menu li a .screen-reader-text {
+  clip: auto;
+  font-size: 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  height: auto;
+  position: relative !important;
+  width: auto;
+  line-height: 12px;
+}

@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6 {
+	margin-top: .5em;
+	margin-bottom: .17em;
+  font-weight: 700;
+  @include font__header-font;
+}
+
+
+@media screen and (max-width: $query_b4_xs_mx)	{
+	h1 {
+		 font-size: 2.1em;
+	}
+	h2 {
+		 font-size: 1.8em;
+	}
+	h3 {
+		 font-size: 1.6em;
+	}
+	h4 {
+		 font-size: 1.3em;
+	}
+	h5 {
+		 font-size: 1.1em;
+	}
+	h6 {
+		 font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width: $query_b4_xs5)	{
+	h1 {
+		 font-size: 1.75em;
+	}
+	h2 {
+		 font-size: 1.5em;
+	}
+	h3 {
+		 font-size: 1.2em;
+	}
+	h4 {
+		 font-size: 1em;
+	}
+	h5 {
+		 font-size: .8em;
+	}
+	h6 {
+		 font-size: .65em;
+	}
+
+}

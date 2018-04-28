@@ -1,0 +1,88 @@
+
+/* Front-page Mixins */
+
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/** Subpage Mixins **/
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 20) * 1px;
+	font-size: $sizeValue * 1.25rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+//Custom Mixins rbtm
+
+// @mixin font__serif($size: false, $colour: false, $weight: false,  $lh: false) {
+//     font-family: 'PT Serif',Georgia,Cambria,"Times New Roman",Times,serif;
+// 		@if $size { font-size: 1rem; }
+//     @if $colour { color: black; }
+//     @if $weight { font-weight: 400; }
+//     @if $lh { line-height: 1.5; }
+// }
+// @mixin font__header-font($size, $colour, $weight,  $lh) {
+//     font-family: 'Source Sans Pro',"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;;
+// 		@if $size == false { font-size: 1.25rem; } @else { font-size: $size;}
+//     @if $colour == false { color: black; } @else { color: $colour;}
+//     @if $weight == false { font-weight: 400; } @else { font-weight: $weight;}
+//     @if $lh == false { line-height: 1.2; } @else { line-height: $lh;}
+// }
+
+@mixin font__serif($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'PT Serif',Georgia,Cambria,"Times New Roman",Times,serif;
+		@if $size { font-size: 1rem; }
+    @if $colour { color: black; }
+    @if $weight { font-weight: 400; }
+    @if $lh { line-height: 1.5; }
+}
+@mixin font__script($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+		@if $size == false { font-size: 1rem; }
+    @if $colour == false { color: black; }
+    @if $weight == false { font-weight: 300; }
+    @if $lh == false { line-height: 1.5; }
+}
+@mixin font__body-font($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    @if $size { font-size: 1rem; }
+    @if $colour { color: black; }
+    @if $weight { font-weight: 300; }
+    @if $lh { line-height: 1.5; }
+}
+@mixin font__header-font($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Source Sans Pro',"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;;
+		@if $size { font-size: 1.25rem; }
+    @if $colour { color: black; }
+    @if $weight { font-weight: 700; }
+    @if $lh { line-height: 1.2; }
+}

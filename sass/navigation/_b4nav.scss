@@ -1,0 +1,11 @@
+/** navbar b4 **/
+.navbar-nav li.dropdown.show {
+   position: relative;
+ }
+
+ .navbar-nav li.dropdown.show a.dropdown-toggle::after {
+   transform: rotate(-90deg);
+   // position: absolute;
+   right: 6px;
+   top: .8em;
+ }

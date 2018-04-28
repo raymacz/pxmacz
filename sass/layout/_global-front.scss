@@ -1,0 +1,116 @@
+/***** global front-page style ***/
+// Global styling for this template
+body.is-frontpage {
+  overflow-x: hidden;
+  @include font__body-font;
+}
+
+.is-frontpage p {
+  line-height: 1.75;
+}
+
+.is-frontpage {
+  h1, h2, h3, h4, h5, h6 {
+    color: $black;
+  }
+  div.timeline-image h4 {
+    color: white;
+  }
+  footer span.copyright,
+  footer a.designer{
+    color: $primary;
+  }
+
+}
+
+footer a {
+  color: $color__text-main;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.is-frontpage a.btn {
+  color: $gray-100;
+
+  &:hover {
+    color: darken($gray-100, 10%);
+  }
+}
+
+.is-frontpage .text-primary {
+  color: $primary !important;
+}
+
+.is-frontpage section {
+  padding: 100px 0;
+
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: $font__serif;
+  }
+}
+@media(min-width:768px) {
+  .is-frontpage section {
+    padding: 150px 0;
+  }
+}
+// Button Styles
+
+.is-frontpage .btn {
+  @include font__header-font;
+}
+
+.is-frontpage .btn-xl {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 40px;
+}
+
+.is-frontpage .btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+// Highlight color customization
+
+.is-frontpage ::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+.is-frontpage ::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+.is-frontpage img::selection {
+  background: transparent;
+}
+
+.is-frontpage img::-moz-selection {
+  background: transparent;
+}

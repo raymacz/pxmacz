@@ -1,0 +1,49 @@
+/**  Grid Guide **/
+div.myancestor * {
+  // border: 0.5px solid lightgreen;
+}
+/**  Basic Page CSS - Sub Pages **/
+body {
+  position: relative;
+}
+
+.site-content {
+ padding: 40px 0;
+ margin: 0 auto;
+ // padding-bottom: 40px;
+ // padding-top: 40px;
+}
+
+body.home { background: none !important; } /* added important to override customizer background */
+body.single { background: none !important; } /* added important to override customizer background */
+.single .site-content { background-color: white; }
+
+
+.archive-view.has-sidebar #secondary {
+  margin: 0;
+  // margin: 30px 0 0 0;
+}
+
+.archive-view.has-sidebar #main {
+  margin-bottom: 30px;
+}
+/** search result **/
+div.alert-success {
+  text-align: center;
+  h2.page-title {
+    margin-top: 0;
+  }
+}
+
+.not-found h2.page-title {
+    text-align: center;
+    margin-top: 0;
+}
+
+.site-footer {
+    background-color: $color__bg_footer;
+}
+
+.site-footer .footer-text {
+    color: white;
+}

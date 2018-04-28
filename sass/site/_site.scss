@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+## Global layouts
+--------------------------------------------------------------*/
+@import "../layout/global";
+@import "../layout/global-front"; /** frontpage matched **/
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "archive/archive";
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "header/header";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "secondary/widgets";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "footer/footer"; /** Template dependent  **/
+
+
+/*--------------------------------------------------------------
+## Frontpage Template Parts
+--------------------------------------------------------------*/
+@import "primary/services"; /** frontpage static **/
+@import "primary/portfolio";  /** frontpage static **/
+@import "primary/timeline"; /** frontpage static **/
+@import "primary/team"; /** frontpage static **/
+@import "primary/contact"; /** frontpage static **/
+@import "footer/fpage-footer"; /** frontpage static **/

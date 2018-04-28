@@ -1,0 +1,27 @@
+@import "buttons";
+
+@import "fields";
+
+
+
+div.page-content {
+  input.search-field.form-control {
+   display: inline-block;
+   width: 80%;
+   line-height: 2.15em;
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+   font-size: 18px;
+  }
+  .search-submit {
+    position: absolute;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.wpcf7-form  {
+  #sendMessageButton, .wpcf7-response-output {
+    color: white;
+  }
+}
